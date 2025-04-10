@@ -1,4 +1,4 @@
-local Lib = require "auto-session.lib"
+/aulocal Lib = require "auto-session.lib"
 local Config = require "auto-session.config"
 local AutoCmds = require "auto-session.autocmds"
 
@@ -472,7 +472,14 @@ function AutoSession.auto_restore_session_at_vim_enter()
 
     -- Check to see if the last session feature is on
     if Config.auto_restore_last_session then
-      Lib.logger.debug "Last session is enabled, checking for session"
+      Lib.logger.debug "Last session is enabled, checking for arguments"
+
+      if launch_argv ~= 0 then
+        return false
+      end
+
+      Lib.logger.debug "checking for session"
+
 
       local last_session_name = Lib.get_latest_session(AutoSession.get_root_dir())
       if last_session_name then
