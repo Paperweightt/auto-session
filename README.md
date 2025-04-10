@@ -1,3 +1,6 @@
+### fork details
+auto_restore_last_session doesn't launch while there are launch arguements
+
 # 🗒️ AutoSession
 
 AutoSession takes advantage of Neovim's existing session management capabilities to provide seamless automatic session management.
