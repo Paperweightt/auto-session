@@ -1,4 +1,4 @@
-/aulocal Lib = require "auto-session.lib"
+local Lib = require "auto-session.lib"
 local Config = require "auto-session.config"
 local AutoCmds = require "auto-session.autocmds"
 
