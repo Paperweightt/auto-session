@@ -1,5 +1,5 @@
 # Fork Details
-auto_restore_last_session doesn't run while there are launch arguements
+auto_restore_last_session doesn't run while there are launch arguments
 
 # 🗒️ AutoSession
 
